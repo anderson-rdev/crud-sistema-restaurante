@@ -198,25 +198,27 @@ def media_avaliacoes():
     lista.sort()
     print("\n📈 Médias das Avaliações por Restaurante:")
     for nome, media in lista:
-        print(f"{nome}: {media:.2f}")
+        print(f"📚 {nome}: {media:.2f} ⭐")
 
 # Interface de Linha de Comando
 def menu():
     while True:
-        print("\n" + "=" * 40)
-        print("        Menu de operações:      ") 
-        print("=" * 40)
-        print("1. Incluir novo restaurante")
-        print("2. Consultar todos os restaurantes")
-        print("3. Alterar dados de um restaurante")
-        print("4. Excluir um restaurante específico")
-        print("5. Incluir uma avaliação para um restaurante")
-        print("6. Consultar avaliações de um restaurante")
-        print("7. Alterar uma avaliação de um restaurante")
-        print("8. Excluir uma avaliação de um restaurante")
-        print("9. Consultar a média das avaliações por restaurante")
-        print("10. Sair")
-        print("=" * 40 + "\n") 
+        print("\n" + "╔" + "═" * 38 + "╗")
+        print("║" + "Menu de Operações".center(38) + "║")
+        print("╠" + "═" * 38 + "╣")
+        print("║ 1. Incluir novo restaurante          ║")
+        print("║ 2. Consultar todos os restaurantes   ║")
+        print("║ 3. Alterar dados de um restaurante   ║")
+        print("║ 4. Excluir um restaurante específico ║")
+        print("╠" + "─" * 38 + "╣")
+        print("║ 5. Incluir uma avaliação             ║")
+        print("║ 6. Consultar avaliações              ║")
+        print("║ 7. Alterar uma avaliação             ║")
+        print("║ 8. Excluir uma avaliação             ║")
+        print("╠" + "─" * 38 + "╣")
+        print("║ 9. Média das avaliações              ║")
+        print("║ 10. Sair                             ║")
+        print("╚" + "═" * 38 + "╝\n")
 
         escolha = input("Escolha uma operação: ").strip()
 
